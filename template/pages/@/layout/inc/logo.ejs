@@ -6,6 +6,8 @@ const logo = _.settings.logo
   
 if (logo && logo.url) {
   const { width, height } = _.tryImageSize(logo.url)
+
+  logo.url = '/img/uploads/overtie-svg.svg'
   %>
   <img
     id="logo"

@@ -33,6 +33,17 @@
       "sort": "sales",
       "title": "",
       "headless": true
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/900x700.png"
+        },
+        {
+          "img": "/img/uploads/900x700.png"
+        }
+      ]
     }
   ]
 }

@@ -1,3 +1,103 @@
 // Add your custom CSS here.
-//up
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
+
+
+
+.font-weight-bold{font-weight: bold;}
+.font-weight-800{font-weight: 800;}
+.font-weight-700{font-weight: 700;}
+.font-weight-600{font-weight: 600;}
+.font-weight-500{font-weight: 500;}
+.font-weight-normal{font-weight: normal;}
+.font-weight-300{font-weight: 300;}
+
+.align-items-center{align-items: center;}
+.align-items-end{align-items: flex-end;}
+.justify-content-center{justify-content: center;}
+.justify-content-end{justify-content: flex-end;}
+.justify-content-between{justify-content: space-between;}
+
+/* Direção de flexbox como linha em todos os dispositivos */
+.flex-row {
+  flex-direction: row !important;
+}
+
+/* Direção de flexbox como coluna em todos os dispositivos */
+.flex-column {
+  flex-direction: column !important;
+}
+
+/* Direção de flexbox como linha em dispositivos de tamanho médio e maiores */
+@media (min-width: 768px) {
+  .flex-md-row {
+      flex-direction: row !important;
+  }
+}
+
+/* Direção de flexbox como coluna em dispositivos menores que o tamanho médio */
+@media (max-width: 767.98px) {
+  .flex-md-column {
+      flex-direction: column !important;
+  }
+}
+.w-100{width: 100%;}
+main ~ iframe{display: none;}
+:root{
+  --h1:2.488rem;
+  --h2:2.074rem;
+  --h3:1.728rem;
+  --h4:1.44rem;
+  --h5:1.2rem;
+  --h6:1.2rem;
+  --font-size:1rem;
+  --font-size-sm: 0.833rem;
+  --smallest: 0.694rem;
+}
+@media(max-width:990px){
+  :root{
+      --h1:28.38px;
+      --h2:22.45px;
+      --h3:19.93px;
+      --h4:17.72px;
+      --h5:15.75px;
+      --h6:15.75px;
+      --font-size:14px;
+      --font-size-sm: 12.4px;
+      --smallest: 11px;
+  }
+}
+body{
+    font-family: "Montserrat";
+}
+header#header{
+  #logo{
+    height: 26px;
+  }
+}
+
+.products-carousel{
+  padding: 0;
+  width: 100%;
+  max-width: unset;
+}
+
+
+footer.footer{
+  .credits{
+    *{
+        color: #4f4f4f;
+        font-size: var(--smallest);
+    }
+    .ecom-credits{
+        background: transparent;
+        padding: 0;
+    }
+    img{height: 16px;}
+  }
+  .footer__credits{padding: 1.5rem 0;border-color:var(--color-border)}
+
+  .footer__credits a{display: flex;align-items: center;gap: .5rem;}
+}

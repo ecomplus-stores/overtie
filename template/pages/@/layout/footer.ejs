@@ -178,33 +178,20 @@ const themeCustom = _.settings.theme.custom || ''
     </div>
 
     <div class="footer__credits">
-      <span>
-        <%= footer.credits || `© ${_.store.name} / ${contacts.address} / ${contacts.doc_number}` %>
-      </span>
-      <% if (themeCustom === 'ecom-beauty') { %>
-        <div class="ecom-credits-container">
-          <div class="ecom-credits">
-            <a href="https://e-com.plus" target="_blank" rel="noopener">
-              <img
-                src="https://ecom.nyc3.cdn.digitaloceanspaces.com/storefront/ecom-credits-white.png"
-                alt="E-Com Plus"
-                width="125.42"
-                height="20"
-              >
-            </a>
+      <div class="p-0 w-100">
+        <div class="row align-items-center justify-content-between credits">
+          <div class="col-12 col-md">
+            <span>
+              <small>
+                <%- footer.credits || `© ${_.store.name} / ${contacts.address} / ${contacts.doc_number}` %>
+              </small>
+            </span>
           </div>
+          <div class="col-auto"><%- await include('@/layout/inc/ecom-credits') %></div>
         </div>
-      <% } %>
-      <button
-        id="go-to-top"
-        class="btn btn-primary ml-3"
-        type="button"
-        aria-label="<%= _.dictionary('goToTop') %>"
-      >
-        <i class="i-chevron-up"></i>
-      </button>
+      </div>      
     </div>
   </div>  
 </footer>
 
-<%- await include('@/layout/inc/ecom-credits') %>
+
