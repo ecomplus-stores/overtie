@@ -1,7 +1,7 @@
 {
   "domain": "overtie.netlify.app",
   "currency_symbol": "R$",
-  "primary_color": "#2d3146",
+  "primary_color": "#2a3148",
   "theme": {
     "bootswatch": "_",
     "custom": "_"
@@ -18,7 +18,7 @@
   "favicon": "/img/uploads/isologo-overtie-negativo-png.png",
   "icons_font": "font-awesome",
   "country_code": "BR",
-  "secondary_color": "#4f4f4f",
+  "secondary_color": "#565555",
   "icon": "/img/uploads/isologo-overtie-negativo-png.png",
   "store_id": 51518,
   "description": "Um convite para um mundo de elegância atemporal, onde cada peça é meticulosamente projetada para transcender tendências passageiras e oferecer um senso duradouro de sofisticação.",
