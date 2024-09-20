@@ -10,7 +10,12 @@
         {
           "start": "",
           "end": "",
-          "img": "/img/uploads/1920x650.png"
+          "img": "/img/uploads/overtie-banner-full-1920x600-v1.png"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/overtie-banner-full-1920x600-v2.png"
         }
       ]
     },
@@ -18,10 +23,13 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/900x700.png"
+          "img": "/img/uploads/overtie-categoria-500x500-complemente-seu-look-v1-01-1-.png"
         },
         {
-          "img": "/img/uploads/900x700.png"
+          "img": "/img/uploads/overtie-categoria-500x500-conforto-e-versatilidade-v1-01-1-.png"
+        },
+        {
+          "img": "/img/uploads/overtie-categoria-500x500-tecido-premium-v1-01-1-.png"
         }
       ]
     },
