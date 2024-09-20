@@ -20,6 +20,15 @@
       ]
     },
     {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
+      "sort": "sales",
+      "title": "",
+      "headless": true
+    },
+    {
       "type": "banners-grid",
       "banners": [
         {
@@ -41,17 +50,6 @@
       "sort": "sales",
       "title": "",
       "headless": true
-    },
-    {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/900x700.png"
-        },
-        {
-          "img": "/img/uploads/900x700.png"
-        }
-      ]
     }
   ]
 }

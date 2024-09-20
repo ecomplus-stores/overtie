@@ -131,7 +131,13 @@ const hasAllDepartments = header.menu_all_departments
           onclick="toggleSidenav()"
           aria-label="Toggle side navigation"
         >
-          <i class="header__toggler-icon i-bars"></i>
+          <i class="menu-toggle-ico">
+            
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12H21M3 6H21M3 18H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+  
+          </i>
           <% if (!categories.length) { %>
             <span class="d-none d-lg-inline">
               Menu
@@ -152,20 +158,44 @@ const hasAllDepartments = header.menu_all_departments
           role="group"
           aria-label="<%= _.dictionary('myAccount') %>"
         >
-          <button
-            class="btn btn-lg"
-            id="mobile-search-btn"
-            type="button"
-            data-toggle="collapse"
-            data-target="#search-bar"
-            aria-expanded="true"
-            aria-controls="search-bar"
-            aria-controls="search-bar"
-            title="<%= _.dictionary('searchProducts') %>"
-          >
-          <img src="/img/theme_search.svg"/>
-          </button>
-
+          <div>
+              <form
+                class="header__search mt-2 mt-md-3 mt-lg-0"
+                id="search-form"
+                action="/search"
+                method="get"
+              >
+                <input
+                  type="search"
+                  name="term"
+                  placeholder="<%= _.dictionary('searchProducts') %>"
+                  aria-label="<%= _.dictionary('searchProducts') %>"
+                  class="header__search-input form-control"
+                  id="search-input"
+                >
+              </form>
+              <button
+                  class="btn btn-lg"
+                  id="mobile-search-btn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#search-bar"
+                  aria-expanded="true"
+                  aria-controls="search-bar"
+                  aria-controls="search-bar"
+                  title="<%= _.dictionary('searchProducts') %>"
+                >
+                <img src="/img/theme_search.svg"/>
+                </button>
+              <div id="instant-search">
+                <!--
+                  `InstantSearch` should be open on input focus:
+                  https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/InstantSearch.html
+                -->
+              </div>
+            
+          </div> 
+          
           <a
             id="user-button"
             class="btn btn-lg"
