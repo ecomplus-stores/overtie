@@ -1,0 +1,37 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.984c8009218a2e943cbd6dcf4c801e55.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.0381efe8d4b32d9123fa43c8530ed1ef.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.b2703d95055a532b8de8d6145db3e191.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.cac3d48b60aef6e7a4f5940bdefe3db5.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.475148c3755b243d5d37693762af3808.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Overtie",
+  "short_name": "Overtie",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Um convite para um mundo de elegância atemporal, onde cada peça é meticulosamente projetada para transcender tendências passageiras e oferecer um senso duradouro de sofisticação.",
+  "background_color": "#ffffff",
+  "theme_color": "#2a3148"
+}
